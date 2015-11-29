@@ -40,6 +40,7 @@ $(document).ready(function() {
         	playerTwoDown -= 5;
         	$("#player2").css({top:playerTwoDown});
         }
+ 		checkWinner();
 	});
 	$("button").click(function reset() {
 		$("#player1").css('left', 0);
@@ -48,3 +49,11 @@ $(document).ready(function() {
 		$("#player2").css('top', 400);
 	});
 });
+
+function checkWinner() {
+	if ($('#player1').css('left')== "500px" && $('#player1').css('top')=="200px") {
+    	alert("Player 1 wins");
+	} else if ($('#player2').css('left')== "500px" && $('#player2').css('top')=="200px") {
+    	alert("Player 2 wins");
+	}
+}
