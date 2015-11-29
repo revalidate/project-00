@@ -52,8 +52,8 @@ $(document).ready(function() {
 
 function checkWinner() {
 	if ($('#player1').css('left')== "500px" && $('#player1').css('top')=="200px") {
-    	alert("Player 1 wins");
+    	alert("Lakshmi wins");
 	} else if ($('#player2').css('left')== "500px" && $('#player2').css('top')=="200px") {
-    	alert("Player 2 wins");
+    	alert("Ganesha wins");
 	}
 }
