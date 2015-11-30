@@ -56,12 +56,24 @@
 
 #winnerName {
 	position: absolute;
-	top: 50px;
+	top: 52px;
 	left: 420px;
 	width: 400px;
 	height: 40px;
 	text-align: center;
 	font-size: 30px;
+	color: #FB76A5;
+	font-family: Courier;
+}
+
+#playerConditions {
+	position: absolute;
+	top: 43px;
+	left: 220px;
+	width: 800px;
+	height: 40px;
+	text-align: center;
+	font-size: 15px;
 	color: #FB76A5;
 	font-family: Courier;
 }
