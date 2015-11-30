@@ -15,24 +15,37 @@
 
 #player1 {
 	position: absolute;
+	top: 160px;
+	left: 60px;
 }
 
 #player2 {
 	position: absolute;
-	top: 400px;
+	top: 520px;
+	left: 60px;
 }
 
 #winner {
 	position: absolute;
 	border: 2px solid white;
 	left: 1000px;
-	top: 200px;
+	top: 300px;
+}
+
+.btn-primary {
+	position: absolute;
+	color: white;
+	background-color: inherit;
+	border: 2px solid white;
+	left: 1000px;
+	top: 405px;
+	width: 100px;
 }
 
 #winnerConditions {
 	position: absolute;
 	top: 20px;
-	left: 350px;
+	left: 420px;
 	width: 400px;
 	height: 40px;
 	text-align: center;
@@ -44,23 +57,13 @@
 #winnerName {
 	position: absolute;
 	top: 50px;
-	left: 350px;
+	left: 420px;
 	width: 400px;
 	height: 40px;
 	text-align: center;
 	font-size: 30px;
 	color: #FB76A5;
 	font-family: Courier;
-}
-
-.btn-primary {
-	position: absolute;
-	color: white;
-	background-color: inherit;
-	border: 2px solid white;
-	left: 1000px;
-	top: 302px;
-	width: 100px;
 }
 
 body {

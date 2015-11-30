@@ -1,9 +1,9 @@
 console.log("Sanity Check: JS is working!");
 
-var player1LeftRight = 0;
-var player1UpDown = 0;
-var player2LeftRight = 0;
-var player2UpDown = 400;
+var player1LeftRight = 60;
+var player1UpDown = 160;
+var player2LeftRight = 60;
+var player2UpDown = 520;
 
 $(document).ready(function() {
 	
@@ -47,14 +47,14 @@ $(document).ready(function() {
 
 //Reset Button
 	$("button").click(function reset() {
-		$("#player1").css('left', 0);
-		$("#player1").css('top', 0);
-		$("#player2").css('left', 0);
-		$("#player2").css('top', 400);
-		player1LeftRight = 0;
-		player1UpDown = 0;
-		player2LeftRight = 0;
-		player2UpDown = 400;
+		$("#player1").css('left', 60);
+		$("#player1").css('top', 160);
+		$("#player2").css('left', 60);
+		$("#player2").css('top', 520);
+		player1LeftRight = 60;
+		player1UpDown = 160;
+		player2LeftRight = 60;
+		player2UpDown = 520;
 		$("#winnerName").html("Ready, Set, Go!");
 		$("#winnerConditions").html("Who can get inside the box first?");
 		startGame();
@@ -65,13 +65,13 @@ $(document).ready(function() {
 
 //Checks Winner
 function checkWinner() {
-	if ($('#player1').css('left')== "1000px" && $('#player1').css('top')=="200px") {
+	if ($('#player1').css('left')== "1000px" && $('#player1').css('top')=="300px") {
     	$("#winnerConditions").html("WINNER: ");
     	$("#winnerName").html("Lakshmi");
 
     	//Once one player wins, other player cannot move until board reset
     	$(document).off("keydown");
-	} else if ($('#player2').css('left')== "1000px" && $('#player2').css('top')=="200px") {
+	} else if ($('#player2').css('left')== "1000px" && $('#player2').css('top')=="300px") {
      	$("#winnerConditions").html("WINNER: ");
      	$("#winnerName").html("Ganesha");
      	$(document).off("keydown");
