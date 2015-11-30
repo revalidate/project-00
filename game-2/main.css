@@ -24,6 +24,30 @@
 	top: 200px;
 }
 
+#winnerName {
+	position: absolute;
+	top: 550px;
+	left: 350px;
+	width: 400px;
+	height: 40px;
+	text-align: center;
+	font-size: 30px;
+	color: #FB76A5;
+	font-family: Courier;
+}
+
+#winnerConditions {
+	position: absolute;
+	top: 525px;
+	left: 350px;
+	width: 400px;
+	height: 40px;
+	text-align: center;
+	font-size: 20px;
+	color: #FB76A5;
+	font-family: Courier;
+}
+
 .btn-primary {
 	position: absolute;
 	background: white;
